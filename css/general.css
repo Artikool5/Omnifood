@@ -12,7 +12,7 @@
   display: grid;
   row-gap: 9.6rem;
   column-gap: 6.4rem;
-  margin-bottom: 9.6rem;
+  /* margin-bottom: 9.6rem; */
 }
 
 .grid--2-cols {
@@ -31,6 +31,7 @@
   align-items: center;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -42,6 +43,7 @@
   padding: 1.6rem 3.2rem;
   border-radius: 10px;
   transition: all 0.3s;
+  border: none;
 }
 
 .btn:hover,
@@ -59,6 +61,19 @@
 .btn--outliner:active {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px #fff;
+  color: #555;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+  transition: box-shadow, scale 100ms;
+}
+
+.btn--form:hover {
+  background-color: #fff;
   color: #555;
 }
 
