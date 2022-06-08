@@ -14,13 +14,16 @@ ol {
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
+  /* width: 100%; */
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   line-height: 1;
   color: #555;
+  overflow-x: hidden;
 }
 
 /*************************/
@@ -45,7 +48,7 @@ body {
   list-style-type: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .nav__link:link,
@@ -54,7 +57,7 @@ body {
   color: #333;
   text-decoration: none;
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.3s;
 }
 
@@ -76,6 +79,25 @@ body {
   background-color: #cf711f;
 }
 
+/* MOBILE */
+
+.btn-mobile-nav {
+  display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /*************************/
 /**     HERO SECTION    **/
 /*************************/
@@ -95,7 +117,7 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
-.hero-primary {
+.heading-primary {
   font-size: 5.2rem;
   font-weight: 700;
   line-height: 1.05;
@@ -199,16 +221,16 @@ body {
   line-height: 1.2;
 }
 
-.step-number {
-  font-size: 8.4rem;
-  color: #ccc;
-  font-weight: 600;
-}
-
 .heading-tertiary {
   font-size: 3rem;
   margin-bottom: 3.2rem;
   line-height: 1.2;
+}
+
+.step-number {
+  font-size: 8.4rem;
+  color: #ccc;
+  font-weight: 600;
 }
 
 .step-description {

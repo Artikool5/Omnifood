@@ -12,7 +12,6 @@
   display: grid;
   row-gap: 9.6rem;
   column-gap: 6.4rem;
-  /* margin-bottom: 9.6rem; */
 }
 
 .grid--2-cols {
@@ -113,6 +112,7 @@
   font-size: 1.8rem;
   display: flex;
   align-items: center;
+  line-height: 1.2;
 }
 
 .list-icon {
